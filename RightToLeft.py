@@ -1,3 +1,5 @@
+# Replace all cases of the words "right" with the word "left", even if it's a part of another word
+
 def left_join(phrases: tuple[str, ...]) -> str:
     frases = list(phrases)
     separator = ","
@@ -5,8 +7,6 @@ def left_join(phrases: tuple[str, ...]) -> str:
 
     return result.replace("right", "left")
                 
-
-
 print("Example:")
 print(left_join(("left", "right", "left", "stop")))
 print(left_join(("bright aright", "ok")))

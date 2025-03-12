@@ -1,3 +1,5 @@
+# Find the first word in a string
+
 def first_word(text: str) -> str:
     just_words = "".join(i if i.isalpha() or i == "'" else " " for i in text)
     print(just_words)
