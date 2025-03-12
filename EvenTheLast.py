@@ -1,3 +1,6 @@
+# # Find the sum of the elements with even indexes 
+# Then multiply this summed number and the final element of the list together
+
 def checkio(array: list[int]) -> int:
     if array != []:
         even = []

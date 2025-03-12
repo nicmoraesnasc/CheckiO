@@ -1,3 +1,5 @@
+# Find a substring between markers
+
 def between_markers(text: str, begin: str, end: str) -> str:
     start_index = text.find(begin)
     end_index = text.find(end)
@@ -14,20 +16,20 @@ def between_markers(text: str, begin: str, end: str) -> str:
     
     return text[start_index:end_index]
 
-              
-
 
 print("Example:")
 print(between_markers("<head><title>My new site</title></head>", "<title>", "</title>"))
 
-# assert between_markers("What is >apple<", ">", "<") == "apple"
-# assert (
-#     between_markers("<head><title>My new site</title></head>", "<title>", "</title>")
-#     == "My new site"
-# )
-# assert between_markers("No[/b] hi", "[b]", "[/b]") == "No"
-# assert between_markers("No [b]hi", "[b]", "[/b]") == "hi"
-# assert between_markers("No hi", "[b]", "[/b]") == "No hi"
-# assert between_markers("No <hi>", ">", "<") == ""
 
-# print("The mission is done! Click 'Check Solution' to earn rewards!")
+# These "asserts" are used for self-checking
+assert between_markers("What is >apple<", ">", "<") == "apple"
+assert (
+    between_markers("<head><title>My new site</title></head>", "<title>", "</title>")
+    == "My new site"
+)
+assert between_markers("No[/b] hi", "[b]", "[/b]") == "No"
+assert between_markers("No [b]hi", "[b]", "[/b]") == "hi"
+assert between_markers("No hi", "[b]", "[/b]") == "No hi"
+assert between_markers("No <hi>", ">", "<") == ""
+
+print("The mission is done! Click 'Check Solution' to earn rewards!")

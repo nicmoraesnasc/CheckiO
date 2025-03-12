@@ -1,3 +1,5 @@
+# Reverse every word in a given line
+
 def backward_string_by_word(text: str) -> str:
     words = text.split(' ')
     lista = []
